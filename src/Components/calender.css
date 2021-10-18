@@ -1,0 +1,126 @@
+ .table1 {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    table-layout: fixed;
+    margin-bottom: 50px;
+    border-top: 1px solid #e2e2e2;
+    border-radius: 15px;
+
+  }
+  .table1 thead tr th {
+    background: white;
+    font-weight: 400;
+    color: black;
+    padding: 0.5em;
+    text-align: center;
+    border-left:1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    overflow: hidden;
+  }
+  .table1 thead tr th:first-child {
+    border-radius: 15px 0 0 0;
+}
+  .table1 thead tr th:last-child {
+    border-radius: 0 15px  0 0;
+  }
+  .table1 thead tr th .day {
+    display: block;
+    font-size: 1.2em;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 5px;
+    padding: 5px;
+    line-height: 1.8;
+  }
+  .table1 thead tr th .day.active {
+    background: #d1d5db;
+    color: black;
+  }
+  .table1 thead tr th .short {
+    display: none;
+  }
+  .table1 thead tr th i {
+    vertical-align: middle;
+    font-size: 2em;
+  }
+  .table1 tbody tr {
+    background: #d1d5db;
+  }
+  .table1 tbody tr:nth-child(odd) {
+    border: 1px solid;
+  }
+  .table1 tbody tr:nth-child(n+0) td {
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .table1 tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+    border-left: 1px solid #e2e2e2;
+    position: relative;
+    height: 32px;
+    background: white;
+    cursor: pointer;
+  }
+  .table1 tbody tr td:last-child {
+    border-right: 1px solid #e2e2e2;
+  }
+  .table1 tbody tr td.hour {
+    font-size: 22px;
+    padding: 18px;
+    font-weight: 400;
+    color: black;
+    background: #fff;
+    border-collapse: separate;
+    min-width: 100px;
+    cursor: default;
+
+  }
+  .table1 tbody tr td.hour span {
+    display: block;
+  }
+  @media (max-width: 60em) {
+    .table1 thead tr th .long {
+      display: none;
+    }
+    .table1 thead tr th .short {
+      display: block;
+    }
+    .table1 tbody tr td.hour span {
+      transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+    }
+  }
+  @media (max-width: 27em) {
+    .table1 thead tr th {
+      font-size: 65%;
+    }
+    .table1 thead tr th .day {
+      display: block;
+      font-size: 1.2em;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      margin: 0 auto 5px;
+      padding: 5px;
+    }
+    .table1 thead tr th .day.active {
+      background: #d1d5db;
+      color: white;
+    }
+    .table1 tbody tr td.hour {
+      font-size: 1.7em;
+    }
+    .table1 tbody tr td.hour span {
+      transform: translateY(16px) rotate(270deg);
+      -webkit-transform: translateY(16px) rotate(270deg);
+      -moz-transform: translateY(16px) rotate(270deg);
+    }
+  }
+  
+  .border-bottom{
+    border-top: 1px solid #e2e2e2;
+    border-radius: 12px;
+  }
